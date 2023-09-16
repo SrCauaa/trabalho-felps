@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+$corCartao: rgba(0, 0, 0, 0.55);
+$corCartaoEscura: rgba(0, 0, 0, 0.6);
+$verde: #106729;
+body {
+  background: url(https://s3-alpha-sig.figma.com/img/d54c/0737/b390b687d5bc91a6d7e4f0187bb429bd?Expires=1695600000&Signature=b3td1MZQDyRGwiSSNRLlL1NEDVgLP1SLsVr40RO4ZxGg7NUi9KYLnX7UfwrT0Y8Mu08vsGPPDd71w4jDhvsNJ3Gc7IoslSolW2b4fBhWtEkeU2Uu9Sh8AUycyeiMboG0cAEtBkqmFYO~mzpLtg5OFQ6-Pc3wdJvvpBYaVNr22NBmtjnqCnBwH4FJXUYwIu60b1q2RccEZTHPH7MD5mlhDFBVjvvN4x7GxWkg4YpbI4Oc-GxahaoLdIc4emVNb7~tBDNkRGUoNwmUAyWFe8WDeds2mZ9h5CHIihGj-h7KLvCiKEntlhTFT7nqZGg99vZjbcC7DWcyjMcj3bSJimFuiQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.cartao {
+  background: $corCartao;
+  width: 500px;
+  gap: 30px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .usuario {
+    margin-top: 20px;
+
+    img {
+      border-radius: 50%;
+      background: $corCartaoEscura;
+      border: 1px solid white;
+      padding: 5px;
+    }
+  }
+  .inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      width: 400px;
+      height: 30px;
+      border-width: 0 0 1px;
+      border-color: white;
+      background: transparent;
+      font-size: 24px;
+      color: white;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        color: white;
+      }
+    }
+
+    ion-icon {
+      padding: 10px;
+      color: white;
+      font-size: 24px;
+    }
+  }
+
+  .fP {
+    a {
+      text-decoration: underline;
+      color: white;
+    }
+  }
+
+  .botao {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    button {
+      border: 2px solid white;
+      padding: 8px 30px 8px 30px;
+      border-radius: 10px;
+      color: white;
+      background: transparent;
+      font-size: 20px;
+    }
+  }
+  .redes {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+
+    ion-icon {
+      font-size: 36px;
+      padding: 15px;
+      color: rgb(219, 100, 100);
+
+      &:last-child {
+        color: #1877f2;
+      }
+    }
+  }
+
+  .ajuda {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    a {
+      text-decoration: underline;
+      color: white;
+
+      &:last-child {
+        font-weight: 700;
+      }
+    }
+  }
+}
